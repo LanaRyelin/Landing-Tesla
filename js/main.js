@@ -5,4 +5,8 @@ $(document).ready(function() {
             scrollTop: $(target).offset().top
         }, 500);
     });
+
+    $('.menu__burger').click(function() {
+        $('.menu__burger, .header__menu, .menu').toggleClass('active');
+    });
 });
