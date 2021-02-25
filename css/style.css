@@ -270,9 +270,6 @@ a {
 }
 
 @media (max-width: 768px) and (min-width: 480px) {
-  .block_show-768 {
-    display: block;
-  }
   .menu-list__item {
     display: none;
   }
@@ -317,6 +314,12 @@ a {
   .test-drive__img {
     width: 30px;
     height: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .block_show-768 {
+    display: block;
   }
 }
 
