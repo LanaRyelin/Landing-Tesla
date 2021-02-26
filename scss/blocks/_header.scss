@@ -70,6 +70,7 @@
             color: $dark-color;
             border-bottom: 2px transparent solid;
             transition: 0.2s;
+            cursor: pointer;
             &:hover, &.active {
                 border-bottom: 2px solid $main-color;
                 color: $main-color;

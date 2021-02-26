@@ -254,6 +254,7 @@ a {
   color: #000000;
   border-bottom: 2px transparent solid;
   transition: 0.2s;
+  cursor: pointer;
 }
 
 .menu-list__item:hover, .menu-list__item.active {
