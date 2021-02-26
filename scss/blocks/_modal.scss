@@ -1,0 +1,73 @@
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    display: none;
+    &__body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    &__area {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    &__content {
+        position: relative;
+        width: 90%;
+        background-color: $light-color;
+        padding: 25px 20px 20px 20px;
+        max-width: 400px;
+        z-index: 10;
+        box-shadow: 1px 5px 7px rgba(0, 0, 0, 0.5);
+    }
+    &__close {
+        font-size: 50px;
+        color: $main-color;
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        top: -7px;
+        line-height: 1;
+        &:hover {
+            color: darken($main-color, 10%);
+        }
+    }
+    &__text {
+        margin-bottom: 25px;
+        font-size: 18px;
+        line-height: 1.2;
+    }
+    &__title {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    &__input {
+        width: 100%;
+        margin-bottom: 10px;
+        padding-left: 10px;
+        font-size: 14px;
+        border: 1px solid $border-color;
+        min-height: 40px;
+        line-height: 40px;
+        &:focus {
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+    }
+    &__buttton {
+        width: 100%;
+        color: $light-color;
+        background-color: $main-color;
+        &:hover {
+            background-color: darken($main-color, 10%);
+        }
+    }
+}
